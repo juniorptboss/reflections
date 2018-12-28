@@ -1,0 +1,63 @@
+Question 1 -What happens when you initialize a repository? Why do you need to do it?
+
+	Anser: When I initialize a repository using 'git init', my repository becomes a git
+repository and I can see using 'ls -a' command a '.git' file which ensures
+my repository was correctly intialized as a Git repository.
+I need to do it, so that I can use powerful Git features on the repository 
+as well as to create a repository using Git.
+
+Question 2 -How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+	Anser: A staging area is like an intermediate stage where we can add changes to be 
+committed. It is very useful since it allows us to add not only single file 
+but also multiple files which we need to commit using Git. It also allows
+us to undo files we added for changes to be committed in case we accidentally
+added wrong files using 'git reset' command.
+
+Question 3 -How can you use the staging area to make sure you have one commit per logical
+change?
+
+	Anser: I have to be careful to ensure my changes are logical before I add those to 
+staging area. Once I have done above, I can use 'git diff' command to see 
+changes in files I want to commit by looking at their snapshots in staging 
+area and workspace directory. This would help me understand if my changes 
+are in sync or out of sync. I can safely now commit my changes using 
+'git commit' once my changes are in sync at working directory and staging 
+area to my Git repository.
+
+Question 4 -What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+	Anser: I see branches very helpful in context of game development. So you want to test
+multiple features in a game, some experimental while others you want to push in 
+the current release. In such a case, using a branch is very useful in keeping 
+your history orgranized as well as to help keep development modular.
+
+Question 5 -How do the diagrams help you visualize the branch structure?
+
+	Anser: I need to use command 'git log --graph --oneline branch_name' where there can 
+be multiple space separated branch names. Then I can see different commits in 
+different branches. However, this output is still not very understandable, so 
+we create diagrams which help a lot in visualizing the branch structure since 
+we can directly navigate branches and commit through the branch hierarchy as 
+well as it also helps in finding out unreachable commits.
+
+Question 6 -What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+	Anser: The result of merging 2 branches together is that we can get feature from say,
+for example, a feature branch where we are working on features into the 
+development branch which will contain all additional features from feature
+branch and then we can follow similarly for doing work in parallel. We 
+represent it in diagram since it helps us understand Git merging more easily.
+
+Question 7 -What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+	Anser: Git automatic merging is useful except that in case of ambiguity Git leaves
+it upto authors to fix the conflicts but it still marks of ambiguous parts 
+of code which is a good hint for debugging and resolving the conflicts. 
+Manually merging is often not feasible when multiple people are 
+collaborating on a project and is very tedious and it is hard to keep track 
+of when files increase in quantity and content.

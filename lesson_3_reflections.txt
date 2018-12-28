@@ -1,0 +1,66 @@
+Question 1 -When would you want to use a remote repository rather than keeping all your work
+local?
+
+	Answer: I would want to use a remote repository rather than keeping all my work local
+since it allows me to take benefit of the cloud. Even if my local machine runs 
+into issues and I lose my work still I have no issues since my work is safely 
+backed up to the cloud.
+
+Question 2 -Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+	Answer: If I do it automatically, I lose control and I may not be able to commit
+my work to Github per logical change but there would be lots of unnecessary
+commits which really could be avoided. I would want to do it manually since
+I can push my work per logical change to my local machine and I am in control 
+and charge of my commits.
+
+Question 3 -Describe the differences between forks, clones, and branches.  When would you
+use one instead of another?
+
+	Answer: I would use fork when I want to copy a friend's or other person's repository
+from Github servers to my Github account since I do not have permissions to
+edit the other person's repository directly. I would use clone if I want to
+copy a repository from Github server to my local machine or at different 
+locations on my local machine. I would use branches for a single repository 
+where many people are collaborating together such as working on development 
+and production code which can be worked on in parallel in different branches.  
+
+Question 4 -What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+	Answer: It is very helpful to store a copy of last known state of the remote locally
+since in case of conflicts such as being offline since commits were out of sync 
+at remote on Github server and local machine, this provides a useful 
+information such as by comparing commits it can say on 'git status' that local
+is ahead of remote to indicate that there is a conflict. Also, we can do a 
+'git fetch' which updates local copy to latest remote snapshot so that work can
+be continued offline on most updated snapshot of remote and later do a merge 
+using 'git merge origin master' and then fix up conflicts, and ensure both 
+snapshots on remote and local are consistent.
+
+Question 5 -How would you collaborate without using Git or GitHub?  What would be easier,
+and what would be harder?
+
+	Answer: It would be easier to work on simple collaborative projects without using Git 
+or Github. It would be harder to fix multiple things in parallel but it would 
+be easier in sense that there is no learning curve required. With Git or 
+Github, inspite of learning curve, I would be able to collaborate on very 
+simple to complex projects, working with distributed teams across the world, 
+it would be very easy to share work, do pull requests so that others can review
+my work and multiple people in team can comment with their feedback as well as 
+I have a rich history of commits and various branches making my life very 
+easier in case of bugs since I can easily revert back to previous stable 
+version.
+
+Question 6 -When would you want to make changes in a separate branch rather than directly in
+master?  What benefits does each approach have?
+
+	Answer: I would want to make changes in a separate branch rather than directly in 
+master when I need to collaborate my work with various people so that I can get
+their feedback before I decide to merge my changes into master. This has 
+benefit of getting other team members opinions and minimises chances of bugs 
+but it requries a bit of learning curve. I would for most projects just use a
+master branch if I am not collaborating with a large team of people since this
+just requries pull and push to and from local and master which is fairly simple
+and conveninent for most projects.
